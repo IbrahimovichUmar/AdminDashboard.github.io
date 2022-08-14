@@ -1,0 +1,511 @@
+/*reset + general*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Mulish";
+}
+
+.wrapperDark {
+  background-color: #1e1f23;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button.primary {
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Mulish";
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  margin: 0px 0px 40px 25px;
+}
+
+button.primaryDark {
+  background-color: #151718;
+  border: 1px solid #4a4a4a;
+  color: white;
+}
+
+h1 {
+  padding: 20px 50px 20px 50px;
+  background-color: #ececec;
+  span {
+    color: #2bebc8;
+  }
+}
+
+/*specific*/
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar__content {
+  height: 400px;
+  p {
+    font-size: 18px;
+    color: #b2b2b2;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  a {
+    padding: 18px 0px 18px 15px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  a:hover {
+    color: #2bebc8;
+    background-color: #2bebc82c;
+  }
+  span {
+    font-size: 15px;
+    font-family: "Mulish";
+    padding-left: 10px;
+    color: rgb(68, 68, 68);
+  }
+}
+
+.sidebarDark {
+  background-color: #151718;
+
+  h1 {
+    background-color: black;
+    color: #b2b2b2;
+
+    span {
+      color: #6948db;
+    }
+  }
+
+  a {
+    border-bottom: 1px solid #7e7d7d;
+    color: #b3b3b3;
+  }
+  a:hover {
+    background-color: rgb(47, 47, 47);
+  }
+}
+
+.navbar {
+  margin-left: 200px;
+  width: 1648px;
+}
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .search__bar {
+    background-color: #ececec;
+    height: 40px;
+    width: 260px;
+    border: none;
+    border-radius: 54px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #b5b7b9;
+    padding-left: 30px;
+    margin-left: 50px;
+
+    input {
+      margin-left: 10px;
+      background-color: #ececec;
+      font-family: "Mulish";
+      font-weight: 400;
+      font-size: 12px;
+      border: none;
+      outline: none;
+      color: #b5b7b9;
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 20px;
+      color: #c5c7cd;
+      margin-right: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #252733;
+      margin-right: 30px;
+    }
+    .user__img {
+      margin-right: 50px;
+    }
+  }
+  .vertical__line {
+    width: 1px;
+    height: 40px;
+    background-color: #c5c7cd;
+    margin-right: 30px;
+  }
+}
+
+.headerDark {
+  background-color: #151718;
+
+  .search__bar {
+    background-color: #151718;
+    border: 1px solid #b5b7b9;
+
+    input {
+      background-color: #151718;
+    }
+  }
+
+  .user {
+    p {
+      color: #b5b7b9;
+    }
+  }
+}
+
+.header__mobile {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 50px;
+}
+
+.content__1 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 225px;
+
+  .card1 {
+    background-color: #2bebc8;
+    border-radius: 8px;
+    font-family: "Mulish";
+    display: flex;
+
+    .leftMobile {
+      display: none;
+    }
+    .left {
+      max-width: 50%;
+
+      h2 {
+        font-weight: 700;
+        font-size: 25px;
+        padding: 0;
+        margin: 20px 0px 0px 40px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #4a4a4a;
+        text-align: start;
+        margin: 15px 0px 0px 40px;
+      }
+    }
+    .right {
+      text-align: right;
+      margin-top: 10px;
+    }
+  }
+
+  .card1Dark {
+    background-color: #0d0c0f;
+    color: white;
+
+    .left {
+      p {
+        color: #d0d0d0;
+      }
+    }
+  }
+  .card2 {
+    background-color: white;
+    border-radius: 8px;
+    font-family: "Mulish";
+
+    .chart {
+      padding: 24px;
+      h2 {
+        padding: 0;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .card2Dark {
+    background-color: black;
+    color: #ececec;
+  }
+}
+
+.content__2 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1.02fr;
+  grid-template-rows: 150px;
+  margin-top: 20px;
+}
+
+.cardDark {
+  background-color: #000 !important;
+  color: white;
+}
+.content__3 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 360px;
+  margin-top: 20px;
+
+  .card6 {
+    background-color: white;
+    border-radius: 8px;
+    font-family: "Mulish";
+
+    .chart {
+      padding: 24px;
+      h2 {
+        padding: 0;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .card6Dark {
+    background-color: black;
+    color: #ececec;
+  }
+  .card7 {
+    background-color: white;
+    border-radius: 8px;
+
+    .chart {
+      padding: 24px 24px 0px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        padding: 0;
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+      }
+      span {
+        font-size: 22px;
+        margin-top: 8px;
+        color: #06aa8d;
+      }
+    }
+
+    .circle__chart {
+      margin-top: 30px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .card7Dark {
+    background-color: black;
+    color: #ececec;
+  }
+}
+
+.primaryMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 380px) {
+  .sidebar {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+
+  .header__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: white;
+    .three__line {
+      display: flex;
+      font-size: 30px;
+      margin-left: 20px;
+    }
+    h1 {
+      background-color: white;
+      font-size: 25px;
+    }
+
+    .user {
+      margin-right: 15px;
+    }
+  }
+
+  .header__mobileDark {
+    background-color: black;
+
+    .three__line {
+      color: white;
+    }
+
+    h1 {
+      background-color: black;
+      color: white;
+
+      span {
+        color: #694bdb;
+      }
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    margin: 0;
+    width: auto;
+  }
+
+  .main {
+    padding: 26px 24px 0px 24px;
+  }
+
+  .content__1 {
+    grid-template-columns: 330px;
+    grid-template-rows: 350px;
+
+    .card1 {
+      background-color: #2bebc8;
+      border-radius: 8px;
+      font-family: "Mulish";
+      display: grid;
+
+      .leftMobile {
+        display: flex;
+
+        img.banner {
+          max-width: 99%;
+        }
+      }
+      .left {
+        max-width: 100%;
+
+        h2 {
+          font-weight: 600;
+          font-size: 16px;
+          margin: 0;
+          margin-left: 30px;
+          width: 300px;
+        }
+        p {
+          font-size: 12px;
+          margin: 0;
+          margin-left: 30px;
+          width: 250px;
+          line-height: 24px;
+        }
+      }
+      .right {
+        display: none;
+      }
+    }
+
+    .card1Dark {
+      background-color: #0d0c0f;
+      color: white;
+
+      .left {
+        p {
+          color: #d0d0d0;
+        }
+      }
+    }
+    .card2 {
+      .chart {
+        h2 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .card2Dark {
+      background-color: black;
+      color: #ececec;
+    }
+  }
+
+  .content__2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px;
+  }
+
+  .content__3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px 360px;
+  }
+
+  .button__mobile {
+    padding: 50px 0px 50px 70px;
+    .primaryMobile {
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      background-color: white;
+      width: 150px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: "Mulish";
+      font-weight: 600;
+      margin: 0px 0px 40px 25px;
+    }
+
+    .primaryMobileDark {
+      background-color: #151718;
+      border: 1px solid #4a4a4a;
+      color: white;
+    }
+  }
+}
